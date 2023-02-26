@@ -23,9 +23,9 @@ if(isset($_POST['pubMsg'])){
  $msgs=array_merge($msgs);
 $msgs=serialize($msgs);
   if(file_put_contents($filename,$msgs)){
-    echo "<script>alert('留言成功！');location.href='./comment.php';</script>";
+    echo "<script>alert('留言成功！');location.href='./comment.html';</script>";
   }else{
-    echo "<script>alert('留言失败！');location.href='./comment.php';</script>";
+    echo "<script>alert('留言失败！');location.href='./comment.html';</script>";
   }
 }
 
@@ -55,13 +55,13 @@ $msgs=serialize($msgs);
 						<div class="nav-collapse navbar-responsive-collapse collapse">
 							<ul class="nav">
 								<li >
-									<a href="./comment.php">主页</a>
+									<a href="./comment.html">主页</a>
 								</li>
 								<li >
 									
 								</li>
 								<li class="active">
-									<a href="./add.php">添加</a>
+									<a href="./add.html">添加</a>
 								</li>
 								
 								
